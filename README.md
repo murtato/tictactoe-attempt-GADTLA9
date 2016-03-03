@@ -2,7 +2,7 @@
 
 # WDI DTLA 9 Class Repository
 
-Welcome to the WDI SM 22 class repository. Here is where
+Welcome to the WDI DTLA 9 class repository. Here is where
 we will store the information you need as students. This includes important
 links and readings, in-class examples, prompts and solutions for exercises,
 labs, homework and projects.
