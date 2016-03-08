@@ -1,0 +1,75 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel);
+
+body {
+  background: url('https://de1000colores.files.wordpress.com/2011/08/pattern1.jpg');
+  background-size: cover;
+  font-family: Futura, Helvetica, monospace;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  margin-top: -20px;
+}
+
+header {
+  height: 510px;
+  background-color: #FFFFF2;
+  text-align: center;
+}
+
+h1 {
+  font-family: Cinzel;
+  font-size: 3em;
+  text-shadow: 0px 2px 3px #555;
+}
+
+header h3 {
+  margin-top: -25px;
+}
+
+main {
+  height: 450px;
+  background-color: #48B3B5;
+}
+
+footer {
+  background-color: #F2AF29;
+  height: 125px;
+}
+
+footer h3 {
+  -webkit-text-stroke: .05px black;
+  color: red;
+  text-shadow: 0px 3px 2px #444;
+  padding: 10px 0px 0px 10px;
+}
+
+img {
+  border-radius: 20px;
+  border: 2px solid cornflowerblue;
+  box-shadow: 0px 8px 10px #555;
+}
+
+.box {
+  margin: 0 auto;
+  width: 80%;
+  border-radius: 25px;
+  box-shadow: 0px 8px 10px #555;
+}
+
+main h3 {
+  color: white;
+  padding: 5px 0 5px 20px;
+}
+
+main article {
+  padding-left: 20px;
+  width: 90%;
+}
+
+ol {
+  margin-left: 5px;
+}
+
+.increase-bottom {
+  margin-bottom: 20px;
+}
