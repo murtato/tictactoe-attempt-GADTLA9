@@ -46,7 +46,7 @@ You will be assigned two of the following elements. With your partner, answer th
 ## DOM Hierarchy
 
 - The DOM is arranged in a tree data structure
-- The root node is the <html> tag
+- The root node is the `<html>` tag
 - Every other tag has a parent tag
 - Tags can have child tags
 
