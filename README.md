@@ -31,7 +31,7 @@ instructional team and classmates, please follow the
 |---------------------------|--------------------|:-------------------:|:------------------------:|:------:|
 | **Course Producer**       | Jude Molke         | @judemolke          | jude@ga.co               | [judemolke](judemolke) |
 | **Instructor**            | Grant Roy          | @yyyyy              | blah@ga.co               | [blah](blah) |
-| **Instructor**            | Kedar Iyer         | @yyyyy              | blah@ga.co               | [blah](blah) |
+| **Instructor**            | Kedar Iyer         | @kedar.iyer         | kedar.iyer@ga.co         | [k26dr](https://github.com/k26dr) |
 | **Instructor**            | Hannah Howard      | @yyyyy              | blah@ga.co               | [blah](blah) |
 | **Instructional Support** | Meredith Bryan     | @meredith           | meredith.bryan@ga.co     | [mer8](mer8) |
 
