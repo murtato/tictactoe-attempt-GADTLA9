@@ -18,6 +18,8 @@
 Timing: 10 min 
 Presentation: Why the dev environment, why the command line
 
+[Presentation Link](https://docs.google.com/presentation/d/1gLVlBsJ6WVqRPPYZ42znio-l9nJ8MxRwYwk2sOISViE/edit#slide=id.g11d23d41d4_0_27)
+
 ### Group Research Project
 
 15 min
