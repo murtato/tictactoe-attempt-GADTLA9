@@ -1,6 +1,5 @@
-# Living within the Box
-
-![Transmogrify](http://www.lovine.com/hobbes/comics/chimage.php?image=transmogrifier2.gif)
+# Little CSS Boxes
+![Transmogrify](http://thumbs.dreamstime.com/x/learn-box-computer-generated-d-rendered-picture-56999018.jpg)
 
 ## CSS Box Model & Positioning
 
@@ -17,30 +16,34 @@
 
 ##### Road Map
 
-1. Intro to the Box Model
-2. The Box Model and Its Components
-3. Display
-4. Positioning
-5. Floats and Clears
-6. Outro
+1. Intro to the Box Model 5min
+2. The Box Model and Its Components 10min
+3. The Web Layout Model Code Along 30 mins
+	3. Display 
+	4. Positioning
+	5. Floats and Clears
+4. Box model review Exercise 15min
 
 ## Intro to the Box Model
 
+
 ![Panels](http://www.collectivenext.com/sites/default/files/styles/medium/public/blog-images/understanding-comics-p61.png?itok=iibrRHw2)
 
-I'm going to first make a crazy comparison, and follow it up with a wild assumption.
+I want to tell you something you might find hard to believe: 
 
-First, for the comparison:
+*** All layout on the web is made of boxes ***
 
->  *Website design is quite similar to comics' panel layout.*
-> 
-> — Ezra Arez Raez, 2016
+Here's a trick to see it: open any website, open the inspector, add a css tag:
 
-Now for the wild assumption: open chrome and visit any site.
+```css
+* { 
+  border: 1px solid red;
+}
+```
 
-Now, if you'll relax your eyes as you stare into that website, I'm sure you'll make out a number of rectangles in that site - go ahead, count them!
-
-I can assume this because, much like comics - predominantly relying on the rectangular panel for the majority of their page layout - **the web is made of rectangles.**
+The rest of this lesson is about 2 things: 
+  1. The structure of each individual box
+  2. How to lay boxes in relation to each other.
 
 We use HTML to decide what rectangles we want and what should go in them.
 
@@ -127,8 +130,6 @@ Lets see the difference between inline, block, and inline-block by adding these 
 In `<div id="inline-vs-block">`, notice what happens when you change width, height, margin, and padding for inline, block, and inline-block elements. Take 5 minutes to alter these in the Chrome Dev Tools.
 
 ## Positioning
-
-![](http://www.forbiddenplanet.co.uk/blog/wp-content/uploads/2010/08/what01.gif)
 
 The `position` property in CSS allows the content to move around the page in four separate fashions: static, relative, absolute, and fixed.
 
