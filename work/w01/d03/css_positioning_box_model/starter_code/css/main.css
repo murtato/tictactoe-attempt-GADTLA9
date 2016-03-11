@@ -1,10 +1,40 @@
 /*The Box Model and its Components*/
-
+.box-model {
+  margin: 50px auto;
+  border: 3px solid red;
+  padding: 50px;
+  width: 100px;
+}
 
 
 /*Inline Vs. Block*/
 
+.inline-vs-block {
+  border: 1px dotted gray;
+  font-size: 60px;
+}
+.inline {
+  display: inline;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 20px;
 
+  width: 500px;
+}
+.block {
+  display: block;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 20px;
+  width: 500px;
+}
+.inline-block {
+  display: inline-block;
+  padding: 20px;
+  border: 1px solid red;
+  margin: 20px;
+  width: 500px;
+}
 
 /*Positioning*/
 
@@ -22,22 +52,46 @@
   height: 500px;
   width: 500px;
   background-color: gray;
+  position: relative;
 }
 
 .one {
   background-color: red;
+  position: static;
 }
 
 .two {
   background-color: blue;
+  position: relative;
+  top: -100px;
+  left: 100px;
 }
 
 .three {
   background-color: green;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: auto;
+  height: auto;
 }
-
 .four {
   background-color: black;
+  position: fixed;
+  right: 100px;
+  top: 80%;
 }
 
-/*Floats*/
+.img-example {
+  float: left;
+  width: 400px;
+}
+.columns > div {
+  float: left;
+  width: 50%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
