@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+
+<body>
+
+<div id='elem'>An element</div>
+
+
+<!-- Above we attached a function to 'An element' that will fire when a user clicks on it   -->
+<!-- Below, attach an event handler,   -->
+<input  id='target' type="text" value=""  > 
+
+<div id='clear'>Clear</div>
+
+
+
+
+<script>
+//we get a hold of an element using its 'id' attribute
+var el  = document.getElementById('elem');
+var target = document.getElementById('target');
+var clear = document.getElementById('clear');
+    
+    //we add a click function that will fire when a user clicks on the element
+    el.addEventListener('click',function(){
+       
+        target.setAttribute('value', el.innerHTML);
+    });
+    
+    clear.addEventListener('click',function(){
+        target.setAttribute('value', '');
+    });   
+
+</script>    
+</body>
+</html>
