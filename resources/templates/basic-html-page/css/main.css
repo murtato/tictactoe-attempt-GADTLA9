@@ -1,0 +1,27 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Open Sans, Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  margin: auto 1rem;
+}
+
+code {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+code a {
+  color: inherit;
+}
+
+footer {
+  font-size: 0.85rem;
+}
