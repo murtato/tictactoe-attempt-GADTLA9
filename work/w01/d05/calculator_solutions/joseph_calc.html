@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+<body>
+
+<div id='elem'><button> An element</button></div>
+
+<!-- Above we attached a function to 'An element' that will fire when a user clicks on it   -->
+<!-- Below, attach an event handler,   -->
+<input  id='target' type="text" value=""  >
+
+<div id='clear'><button> Clear</button></div>
+<div id='1'><button> 1 </button></div>
+<div id='2'><button> 2 </button></div>
+<div id='3'><button> 3 </button></div>
+<div id='4'><button> 4 </button></div>
+<div id='5'><button> 5 </button></div>
+<div id='6'><button> 6 </button></div>
+<div id='7'><button> 7 </button></div>
+<div id='8'><button> 8 </button></div>
+<div id='9'><button> 9 </button></div>
+<div id='0'><button> 0 </button></div>
+<div id='.'><button> . </button></div>
+<div id='='><button> = </button></div>
+<div id='+'><button> + </button></div>
+<div id='-'><button> - </button></div>
+<div id='x'><button> x </button></div>
+<div id='/'><button> / </button></div>
+
+<script>
+//we get a hold of an element using its 'id' attribute
+var el  = document.getElementById('elem');
+var target = document.getElementById('target');
+var clear = document.getElementById('clear');
+var one = document.getElementById('1');
+var two = document.getElementById('2');
+var three = document.getElementById('3');
+var four = document.getElementById('4');
+var five = document.getElementById('5');
+var six = document.getElementById('6');
+var seven = document.getElementById('7');
+var eight = document.getElementById('8');
+var nine = document.getElementById('9');
+var zero = document.getElementById('0');
+var dec = document.getElementById('.');
+var equal = document.getElementById('=');
+var plus = document.getElementById('+');
+var mult =document.getElementById('x');
+var divide =document.getElementById('/');
+
+var targetValue =""
+
+var runningTotal = 0
+
+//we add a click function that will fire when a user clicks on the element
+el.addEventListener('click',function(){
+  target.setAttribute('value', el.innerHTML);
+});
+clear.addEventListener('click',function(){
+  targetValue = "" //Reset target value to ""
+  target.setAttribute('value', targetValue); //Set the text box on screen to current value of target value.
+});
+one.addEventListener('click',function(){
+  targetValue += "1"
+  target.setAttribute('value', targetValue );
+  console.log(targetValue)
+});
+
+two.addEventListener('click',function(){
+  targetValue += "2"
+  target.setAttribute('value', targetValue );
+});
+
+three.addEventListener('click',function(){
+  targetValue += "3"
+  target.setAttribute('value', targetValue);
+});
+
+four.addEventListener('click',function(){
+  targetValue += "4"
+  target.setAttribute('value', targetValue );
+});
+five.addEventListener('click',function(){
+  targetValue += "5"
+  target.setAttribute('value', targetValue );
+});
+six.addEventListener('click',function(){
+  targetValue += "6"
+  target.setAttribute('value', targetValue );
+});
+seven.addEventListener('click',function(){
+  targetValue += "7"
+  target.setAttribute('value', targetValue );
+});
+eight.addEventListener('click',function(){
+targetValue += "8"
+  target.setAttribute('value', targetValue);
+});
+nine.addEventListener('click',function(){
+  targetValue += "9"
+  target.setAttribute('value', targetValue);
+});
+zero.addEventListener('click',function(){
+  targetValue += "0"
+  target.setAttribute('value', targetValue);
+});
+
+plus.addEventListener("click", function(){
+  runningTotal = parseInt(targetValue)
+  targetValue = ""
+  target.setAttribute('value',targetValue); //dispaly whatever target value is
+});
+equal.addEventListener('click',function(){
+  runningTotal = runningTotal + parseInt(targetValue)
+  targetValue = runningTotal.toString()
+  target.setAttribute("value",targetValue)//display whatever target value is
+})
+
+
+</script>
+</body>
+</html>
+Add Comment Collapse
