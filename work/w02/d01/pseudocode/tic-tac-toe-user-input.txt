@@ -1,0 +1,8 @@
+Set currentTurn to "X"
+When a tile is clicked:
+    Display the currentTurn in the tile
+    if currentTurn is "X"
+        Set currentTurn to "O"
+    else if currentTurn is "O"
+        Set currentTurn to "X"
+    
