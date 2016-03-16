@@ -18,9 +18,7 @@ Starter data (character and land names) has been provided in
 
 1.  Define and invoke the functions outlined below inside of
     [`js/fellowship.js`](starter/js/fellowship.js).
-2.  **Do Parts 1 and 2**. Everything else is extra, in case you want
-    to continue practicing.
-3.  If you finish with Part 5, you can try to chain together
+2.  If you finish with Part 5, you can try to chain together
     all of the functions you've created. The easiest way to do this
     is to call them all with `setTimeout`... But you can also
     attempt to chain them using 
