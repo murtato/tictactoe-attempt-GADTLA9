@@ -1,0 +1,90 @@
+<DOCTYPE html>
+<html>
+<head>
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+</head>
+<style>
+.red {
+	color: red;
+}
+.blue {
+	color: blue;
+}
+
+</style>
+<body>
+
+
+
+<div class="hello"></div>
+
+<div class="blue" id="red">red </div>
+
+
+<button id="hide">Hide disclaimer</button> <button id="show" style="display:none;">Show disclaimer</button>
+
+<div id="disclaimer"> Warning: this will be hidden if you click the button above. </div> 
+
+
+<div id="container"></div>
+
+
+<div id="target"></div>
+<!-- We must load a local json file using a script tag -->
+<script type="text/javascript" language="javascript" src="list.json"></script>
+<script>
+	
+/* Jquery Examples */
+ 
+/* RETRIEVING ELEMENTS */    
+//retrieving an element using its id,
+var el  = $("#target");
+
+/* retrieving an element using it's class. Because many elements may share the same class,
+we must be more specific with this selector by specifying we want the 'first' one that matches. */
+var hello = $(".hello").first();
+    hello.html("Hello");
+
+
+/* ADDING AND REMOVING CLASSES FROM ELEMENTS */
+$("#red").addClass('red');  //add the .red class
+$("#red").removeClass('blue');  //remove .blue
+
+
+/* TOGGLING VISIBLE STATE */
+
+//hiding elements
+$('#hide').click(function() {
+  
+  //we can select multiple elements
+  $('#disclaimer,#hide').hide();  //hide the elements from view
+  $('#show').show();
+});
+
+$('#show').click(function() {
+
+  $('#disclaimer,#hide').show();
+  $('#show').hide();
+});
+
+//showing and hiding is so common that jquery has a special function for this
+//  $('#disclaimer').toggle();
+
+/* INSERTING NEW HTML */
+
+//here we create a new element, but remember, we haven't inserted
+//it into the page yet
+var newP = $('<p>My new paragraph</p>');
+
+//here we insert the element into the page
+$("#container").append(newP);
+
+
+//below we grab data from the 'list.json' file we loaded into the page 
+//grab the first object's name propert in tasks array and insert its value
+//the <div id='target'> element
+ $("#target").html(list.tasks[0].name);  
+
+</script>
+</body>
+</html>
