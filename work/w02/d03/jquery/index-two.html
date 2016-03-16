@@ -1,0 +1,51 @@
+<DOCTYPE html>
+<html>
+<head>
+<script   src="https://code.jquery.com/jquery-2.2.1.min.js"   integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="   crossorigin="anonymous"></script>
+</head>
+<style>
+#panel {
+  background: hotpink;
+  height: 200px;
+  width: 150px;	
+  display: none;	
+}
+</style>
+<body>
+
+<table id="table1">
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td> 
+    <td>50</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td> 
+    <td>94</td>
+  </tr>
+</table>
+
+<button id="btn-slide">Slide panel</button>
+<div id="panel"></div>
+
+
+<!-- We must load a local json file using a script tag -->
+<script type="text/javascript" language="javascript" src="list.json"></script>
+<script>
+
+//Grabbing children of an element
+//This will return an array filled with all the children of the body
+$(document.body.children);
+
+
+//You can grab the first child of document.body like this
+$(document.body.children[0]);
+
+
+$('#btn-slide').click(function(){
+  $("#panel").slideToggle("slow");
+});
+</script>
+</body>
+</html>
