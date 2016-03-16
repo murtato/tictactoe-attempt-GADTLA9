@@ -22,7 +22,12 @@ Examples:
 
 ``` javascript
 var arrayToString = function(numbers) {
-  // Your awesome code here!
+  
+  var string;
+  while(numbers.length > 0){
+    string += numbers.shift();
+  }
+  return string;
 }
 ```
 
@@ -44,8 +49,12 @@ Examples:
 
 ``` javascript
 var alphabetize = function(words) {
-  // Your awesome code here!
+  return words.sort(function(a, b){
+             if(a.toLowerCase().replace(/\s/g, '') < b.toLowerCase().replace(/\s/g, '')) return -1;
+             else return 1;
+          })
 }
+
 ```
 
 ---
@@ -106,7 +115,8 @@ Examples:
 
 ``` javascript
 var sumItUp = function(num) {
-  // Your awesome code here!
+      for(i = num-1; i > 0; i-- ) num += i;
+      return num;
 }
 ```
 
@@ -128,6 +138,6 @@ Examples:
 
 ``` javascript
 function shortcut(string){
-  // Your awesome code here!
+    return string.replace(/[aeiou]/g,'')
 }
 ```
