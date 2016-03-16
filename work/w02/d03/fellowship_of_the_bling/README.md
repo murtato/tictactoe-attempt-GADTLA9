@@ -4,7 +4,7 @@
 
 Using our new-found knowledge of jQuery, create a function for each of
 the following steps to practice DOM Manipulation, JavaScript, and 
-jQuery. Finally, add some atmospherics and 
+jQuery. 
 
 ### Setup
 
@@ -13,8 +13,6 @@ This is where you will work.
 
 Starter data (character and land names) has been provided in
 [`js/data.js`](starter/js/data.js).
-
-**Remember to work on a localhost server!**
 
 ### Directions
 
